@@ -29,13 +29,14 @@ int main(){
         else if(height < 180) name = "Usopp";
         else {cout << "Enter your bounty: ";
         cin >> Bounty;
-        if (Bounty > 1e9)
+        if (Bounty > 11e8)
             name = "Zoro";
         else name = "Sanji";}
-    }else if(age < 60){ cout << "Enter your bounty: ";
-        cin >> Bounty;}
-    else if(Bounty > 5e8) name = "Jinbe";
-    //else name = "Franky";
+    }else if(age <= 60){ cout << "Enter your bounty: ";
+        cin >> Bounty;
+        if(Bounty > 5e8) name = "Jinbe"; 
+        else name = "Franky";}
+    else name = "Brook";
 
     cout << "Your character = " << name ;
 
